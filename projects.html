@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeevan B A - Projects</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        display: flex;
+        background-color: #f5f5f5;
+      }
+      /* Left Sidebar Styles */
+      .sidebar {
+        width: 300px;
+        height: 100vh;
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        position: fixed;
+        overflow-y: auto;
+      }
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: block;
+        object-fit: cover;
+      }
+      .social-links {
+        list-style: none;
+        margin-top: 30px;
+      }
+      .social-links li {
+        margin: 15px 0;
+      }
+      .social-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .social-links a:hover {
+        color: #3498db;
+      }
+      /* Main Content Styles */
+      .main-content {
+        flex: 1;
+        margin-left: 300px;
+        padding: 20px;
+        overflow-y: auto;
+        height: 100vh;
+      }
+      /* Navigation Styles - Centered */
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .nav-menu a {
+        color: #2c3e50;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+      .nav-menu a:hover {
+        color: #3498db;
+      }
+      /* Content Section Styles */
+      .content-section {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+      .content-section h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+      .content-section h3 {
+        color: #2c3e50;
+        margin: 20px 0 10px;
+      }
+      .content-section p {
+        line-height: 1.6;
+        color: #666;
+      }
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          position: relative;
+          height: auto;
+        }
+        .main-content {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <br /><br />
+      <img src="jeevan-photo.jpg" alt="Jeevan B A" class="profile-img" />
+      <h2 style="text-align: center">Jeevan B A</h2>
+      <p style="text-align: center; color: #bdc3c7">
+        B.Tech CSE Student at VIT, Vellore
+      </p>
+      <ul class="social-links">
+        <li>
+          <a href="mailto:jeevanba273@gmail.com"
+            ><i class="fas fa-envelope"></i> Email</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/jeevanba273" target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/jeevanba273" target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Navigation Menu (with Homepage) -->
+      <nav class="nav-menu">
+        <a href="index.html">Homepage</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="jeevan-resume.pdf" target="_blank">Resume</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <!-- Projects Content -->
+      <div class="content-section">
+        <h2>Projects</h2>
+        <h3>
+          Leveraging Lattice-Based Cryptography for Enhanced Security in
+          Blockchain-Enabled CBDCs
+        </h3>
+        <p>
+          Implemented lattice-based cryptographic techniques to enhance
+          cross-border payments and CBDCs.<br />
+          Developed a quantum-resistant blockchain framework integrating LWE,
+          Ring-LWE, and FHE. Tested the system on Ethereum Sepolia Testnet.<br />
+        </p>
+
+        <h3>
+          Integrating GDELT News Sentiment and NSE EOD Data for Real-Time Stock
+          Price Prediction
+        </h3>
+        <p>
+          Collected and preprocessed stock data from NSE and global news
+          sentiment data from GDELT. <br />Built predictive models using Random
+          Forest, XGBoost, LightGBM, and deep learning algorithms.<br />
+        </p>
+
+        <h3>Deep Learning-Based Dementia Detection Using Neuroimaging</h3>
+        <p>
+          Engineered a deep learning solution using ResNet50, modified for
+          classifying dementia stages from brain MRI scans. <br />Leveraged
+          transfer learning and advanced preprocessing to improve diagnostic
+          accuracy.<br />
+        </p>
+
+        <h3>NSFW (Not Safe For Work) Text Monitoring App</h3>
+        <p>
+          Built an AI-powered tool using Python, Flask, and Scikit-learn to
+          detect and filter offensive language, hate speech, and NSFW text in
+          real-time. <br />Provided a REST API for seamless integration with
+          websites and applications, backed by a web interface for quick testing
+          and moderation.<br />
+        </p>
+
+        <h3>Customer Churn Prediction</h3>
+        <p>
+          Analyzed telecom customer data to predict churn behavior using
+          Logistic Regression, Decision Trees, and Random Forest. <br />Derived
+          actionable insights into customer retention strategies.<br />
+        </p>
+
+        <h3>Ethereum - Sepolia Testnet Implementation</h3>
+        <p>
+          Created a web-based interface for Ethereum’s Sepolia Testnet, enabling
+          wallet generation, balance checks, transaction sending, and real-time
+          monitoring.<br />Leveraged Infura APIs, Web3.js, and Web3.py for
+          blockchain interactions, deploying the solution with Node.js,
+          Express.js, and WebSocket-based live updates.<br />
+        </p>
+
+        <h3>Black–Scholes Option Pricing & Greeks Calculator</h3>
+        <p>
+          Developed a Streamlit app to compute European call/put option prices
+          using the Black–Scholes model and display interactive option Greeks
+          (Delta, Gamma, Theta, Vega, Rho). <br />Implemented dynamic heatmaps,
+          modern UI styling, and robust input validation to ensure a
+          user-friendly, error-free experience.<br />
+        </p>
+
+        <h3>Value-at-Risk (VaR) Analysis App</h3>
+        <p>
+          Developed a Streamlit application to compute both historical and
+          parametric VaR for Indian securities with adjustable confidence
+          levels.<br />Incorporated stress testing (e.g., COVID-19, Adani
+          Crisis) and dynamic NAV visualizations, leveraging real-time data
+          fetching from Yahoo Finance for up-to-date risk assessments.<br />
+        </p>
+
+        <h3>IPO Allotment Probability Calculator</h3>
+        <p>
+          Designed a web application to calculate IPO allotment probabilities
+          based on oversubscription ratios (Retail, SHNI, BHNI, Shareholder).<br />Integrated
+          decimal oversubscription inputs, a simple responsive UI, and robust
+          backend logic to deliver accurate, user-friendly results.<br />
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Add smooth scrolling to all links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+      // Add active class to current navigation link
+      const navLinks = document.querySelectorAll(".nav-menu a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.forEach((link) => link.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

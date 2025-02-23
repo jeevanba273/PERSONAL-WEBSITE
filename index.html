@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeevan B A - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        display: flex;
+        background-color: #f5f5f5;
+      }
+      /* Left Sidebar Styles */
+      .sidebar {
+        width: 300px;
+        height: 100vh;
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        position: fixed;
+        overflow-y: auto;
+      }
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: block;
+        object-fit: cover;
+      }
+      .social-links {
+        list-style: none;
+        margin-top: 30px;
+      }
+      .social-links li {
+        margin: 15px 0;
+      }
+      .social-links a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .social-links a:hover {
+        color: #3498db;
+      }
+      /* Main Content Styles */
+      .main-content {
+        flex: 1;
+        margin-left: 300px;
+        padding: 20px;
+        overflow-y: auto;
+        height: 100vh;
+      }
+      /* Navigation Styles - Centered */
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        background-color: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .nav-menu a {
+        color: #2c3e50;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: 600;
+        transition: color 0.3s;
+      }
+      .nav-menu a:hover {
+        color: #3498db;
+      }
+      /* Content Section Styles */
+      .content-section {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+      .content-section h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+      .content-section p {
+        line-height: 1.6;
+        color: #666;
+      }
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          position: relative;
+          height: auto;
+        }
+        .main-content {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Left Sidebar - RESUME LINK REMOVED -->
+    <div class="sidebar">
+      <br /><br />
+      <img src="jeevan-photo.jpg" alt="Jeevan B A" class="profile-img" />
+      <h2 style="text-align: center">Jeevan B A</h2>
+      <p style="text-align: center; color: #bdc3c7">
+        B.Tech CSE Student at VIT, Vellore
+      </p>
+
+      <ul class="social-links">
+        <li>
+          <a href="mailto:jeevanba273@gmail.com"
+            ><i class="fas fa-envelope"></i> Email</a
+          >
+        </li>
+        <li>
+          <a href="https://github.com/jeevanba273" target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/jeevanba273" target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Navigation Menu - Added Homepage -->
+      <nav class="nav-menu">
+        <a href="index.html">Homepage</a>
+        <a href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="jeevan-resume.pdf" target="_blank">Resume</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <!-- Intro Content Only -->
+      <div class="content-section">
+        <h2>Welcome</h2>
+        <p>
+          Hi! I'm Jeevan B A, a Computer Science undergraduate at Vellore
+          Institute of Technology. I specialize in Machine Learning, Finance,
+          and Blockchain Technology.
+        </p>
+        <p>
+          I have also been actively investing and trading in the Indian stock
+          markets for more than 4 years now, which has further improved my
+          analytical and data-driven approach.
+        </p>
+      </div>
+
+      <div class="content-section">
+        <h2>Current Focus</h2>
+        <style>
+          .hanging-indent {
+            margin: 0;
+            padding: 0;
+            /* Negative text-indent plus left padding creates a "hanging" effect */
+            text-indent: -0.7em;
+            padding-left: 1em;
+          }
+        </style>
+
+        <p class="hanging-indent">
+          • Real-time stock forecasting systems by integrating advanced ML/DL
+          techniques with sentiment analysis on dynamic GDELT news data.
+        </p>
+        <p class="hanging-indent">
+          • Pioneering a dual approach to ESG risk and stock price prediction by
+          contrasting classical and quantum machine learning paradigms.
+        </p>
+        <p class="hanging-indent">
+          • Developing secure CBDC frameworks using quantum-resistant lattice
+          cryptography for cross-border payments.
+        </p>
+        <p class="hanging-indent">
+          • Creating neural network models for early dementia detection using
+          MRI images,utilizing machine learning and deep learning techniques to
+          improve diagnostic accuracy.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Add smooth scrolling to all links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      // Add active class to current navigation link
+      const navLinks = document.querySelectorAll(".nav-menu a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          navLinks.forEach((link) => link.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
