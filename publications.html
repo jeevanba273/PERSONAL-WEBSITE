@@ -377,7 +377,7 @@
       /* Enhanced hanging indent with better spacing */
       .hanging-indent {
         margin: 0 0 15px 0;
-        padding-left: 40px; /* Increased from 30px to 40px */
+        padding-left: 50px; /* Increased from 40px to 50px for more space */
         text-indent: -20px;
         position: relative;
         transition: all 0.3s ease;
@@ -388,7 +388,7 @@
         color: var(--primary-color);
         font-weight: bold;
         position: absolute;
-        left: 10px; /* Moved from 0 to 10px to create more space */
+        left: 20px; /* Moved from 10px to 20px to create even more space */
         top: 0;
         transition: all 0.3s ease;
       }
@@ -435,15 +435,6 @@
         transform: translateY(-5px);
         box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
         border-color: rgba(102, 126, 234, 0.4);
-      }
-
-      /* Override paragraph styling inside publication highlight */
-      .publication-highlight p {
-        padding-left: 0; /* Remove left padding for publication highlight paragraphs */
-      }
-
-      .publication-highlight p::before {
-        display: none; /* Hide the red line for publication highlight paragraphs */
       }
 
       /* Scroll animations */
