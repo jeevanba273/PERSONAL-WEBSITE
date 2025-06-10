@@ -349,7 +349,7 @@
         margin-bottom: 20px;
         transition: all 0.3s ease;
         position: relative;
-        padding-left: 15px;
+        padding-left: 25px; /* Increased from 15px to 25px */
       }
 
       .content-section p::before {
@@ -374,10 +374,10 @@
         transform: translateX(5px);
       }
 
-      /* Enhanced hanging indent with better styling */
+      /* Enhanced hanging indent with better spacing */
       .hanging-indent {
         margin: 0 0 15px 0;
-        padding-left: 30px;
+        padding-left: 40px; /* Increased from 30px to 40px */
         text-indent: -20px;
         position: relative;
         transition: all 0.3s ease;
@@ -388,7 +388,7 @@
         color: var(--primary-color);
         font-weight: bold;
         position: absolute;
-        left: 0;
+        left: 10px; /* Moved from 0 to 10px to create more space */
         top: 0;
         transition: all 0.3s ease;
       }
@@ -435,6 +435,15 @@
         transform: translateY(-5px);
         box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
         border-color: rgba(102, 126, 234, 0.4);
+      }
+
+      /* Override paragraph styling inside publication highlight */
+      .publication-highlight p {
+        padding-left: 0; /* Remove left padding for publication highlight paragraphs */
+      }
+
+      .publication-highlight p::before {
+        display: none; /* Hide the red line for publication highlight paragraphs */
       }
 
       /* Scroll animations */
