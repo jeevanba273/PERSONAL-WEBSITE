@@ -374,11 +374,11 @@
         transform: translateX(5px);
       }
 
-      /* Enhanced hanging indent with better spacing */
+      /* Enhanced hanging indent with proper alignment */
       .hanging-indent {
         margin: 0 0 15px 0;
-        padding-left: 50px; /* Increased from 40px to 50px for more space */
-        text-indent: -20px;
+        padding-left: 50px; /* Space for the bullet and text */
+        text-indent: 0; /* Remove negative indent to align first line properly */
         position: relative;
         transition: all 0.3s ease;
       }
@@ -388,7 +388,7 @@
         color: var(--primary-color);
         font-weight: bold;
         position: absolute;
-        left: 20px; /* Moved from 10px to 20px to create even more space */
+        left: 25px; /* Position bullet properly within the padding */
         top: 0;
         transition: all 0.3s ease;
       }
